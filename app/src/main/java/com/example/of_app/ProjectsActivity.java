@@ -23,12 +23,12 @@ public class ProjectsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_projects);
 
-        projectsListLV = findViewById(R.id.projectsListLV);
-        String[] st = {"projekt1", "projekt2", "projekt3"};
-        ArrayList<String> pList = new ArrayList<>();
-        pList.addAll(Arrays.asList(st));
-        adapter = new ArrayAdapter<String>(this, R.layout.activity_projects, pList);
-        projectsListLV.setAdapter(adapter);
+//        projectsListLV = findViewById(R.id.projectsListLV);
+//        String[] st = {"projekt1", "projekt2", "projekt3"};
+//        ArrayList<String> pList = new ArrayList<>();
+//        pList.addAll(Arrays.asList(st));
+//        adapter = new ArrayAdapter<String>(this, R.layout.row, pList);
+//        projectsListLV.setAdapter(adapter);
 
         final Button newFormBtn = findViewById(R.id.newFormBtn);
         newFormBtn.setOnClickListener(new View.OnClickListener() {
@@ -41,7 +41,6 @@ public class ProjectsActivity extends AppCompatActivity {
         });
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
 
     }
 }
