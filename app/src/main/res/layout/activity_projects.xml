@@ -23,15 +23,25 @@
             android:textAlignment="center"
             android:gravity="center_horizontal"
             android:layout_marginBottom="20sp"
-            android:layout_marginTop="20sp"/>
+            android:layout_marginTop="20sp"
+            />
 
         <TextView
             android:id="@+id/projectsListTV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Projekt1\nProjekt2"
-            android:layout_marginHorizontal="20sp"/>
+            android:layout_marginHorizontal="20sp"
+            android:enabled="true"
+            android:textIsSelectable="true"
+            android:contextClickable="true"
+            android:focusable="true"
+            android:longClickable="true"/>
 
+        <ListView
+            android:id="@+id/projectsListLV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 
